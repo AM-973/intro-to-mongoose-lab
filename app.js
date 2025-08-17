@@ -47,8 +47,8 @@ const updateCustomer = async () => {
   const updatedCustomer = await customer.findById(id)
   if (!updatedCustomer) return console.log('Customer not found.')
 
-  const newName = prompt(`What is the new customer's new name? ${updatedCustomer.name}: `)
-  const newAge = prompt(`What is the customer's new age? ${Number(updatedCustomer.age)}: `)
+  const newName = prompt(`What is the new customer's new name? Name: `)
+  const newAge = prompt(`What is the customer's new age? Age: `)
 
   if (newName !== '')  updatedCustomer.name = newName
   if (newAge !== '') updatedCustomer.age = Number(newAge)
