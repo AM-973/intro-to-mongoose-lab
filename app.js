@@ -80,7 +80,6 @@ const exit = async () => {
 
 const mainMenu = async() => {
     await mongoose.connect(process.env.MONGODB_URI)
-    console.log('Connected to MongoDB')
     let choice = ''
     try{
         while (choice !== '5'){
